@@ -758,7 +758,7 @@ footer {
     display: none;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .mobile-complect__block {
@@ -780,8 +780,8 @@ footer {
 
 .mobile-complect__image {
     margin: 20px auto 20px auto;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
 }
 
 .mobile-complect__image img {
@@ -846,6 +846,11 @@ footer {
         gap: 20px;
     }
 
+    .advantage__img {
+        width: 280px;
+        height: 280px;
+    }
+
     .advantage__block1,
     .advantage__block2,
     .advantage__block3 {
@@ -868,6 +873,11 @@ footer {
     .controller__img {
         width: 300px;
         height: 300px;
+    }
+
+    .controller__bg-decor {
+        width: 280px;
+        height: 280px;
     }
 
     .controller__block {
