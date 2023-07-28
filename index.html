@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css1/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="/css1/slider-styles.css">
+    <script charset="utf-8" src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <title>ETL</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header__logo logo"><a href=""><img src="/icons/logo.svg" alt=""></a></div>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#hero" class="navigation__link">Главная</a></li>
+                    <li class="navigation__item"><a href="#systems" class="navigation__link">Наши продукты</a></li>
+                    <li class="navigation__item"><a href="#advantage" class="navigation__link">Преимущества</a></li>
+                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Фото-портфолио</a></li>
+                    <li class="navigation__item"><a href="">Партнерам</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <ul class="dropdown__list">
+                    <li class="dropdown__item"></li>
+                    <li class="dropdown__item"></li>
+                    <li class="dropdown__item"></li>
+                </ul>
+            </div>
+            <button class="header-button button">Оставить заявку</button>
+            <div class="header__hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile__menu" id="mobile-menu">
+            <nav class="mobile__navigation">
+                <ul class="mobile__list">
+                    <li class="mobile__item"><a href="#hero">Главная</a></li>
+                    <li class="mobile__item"><a href="#systems">Наши продукты</a></li>
+                    <li class="mobile__item"><a href="#advantage">Преимущества</a></li>
+                    <li class="mobile__item"><a href="#portfolio">Фото-портфолио</a></li>
+                    <li class="mobile__item"><a href="">Партнерам</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <main>
+        <section id="hero" class="hero">
+            <div class="section-container">
+                <div class="hero__title-container">
+                    <h1 class="hero__title">Умная подсветка
+                        лестниц ETL<br>для вашего дома</h1>
+                    <h2 class="hero__subtitle">Качественно, быстро, надежно</h2>
+                    <div class="hero__links__container">
+                        <a href="#" class="hero__link">Cтоимость</a>
+                        <a href="#" class="hero__link">Заказать</a>
+                    </div>
+                </div>
+                <video class="hero__bg-video" src="/video/5.mp4" muted autoplay loop playinline></video>
+                <img class="hero__bg-image" src="/images/heroBG.jpeg" alt="">
+            </div>
+        </section>
+        <section id="systems" class="systems">
+            <div class="section-container">
+                <h2 class="systems__title">Системы подсветки от ETL</h2>
+                <div class="systems__types">
+                    <div class="systems__block">
+                        <div class="systems__video">
+                            <video src="/video/mono.mp4" muted autoplay loop playinline></video>
+                        </div>
+                        <p>Монохром</p>
+                        <button class="systems__button button">Подробней</button>
+                    </div>
+                    <div class="systems__block">
+                        <div class="systems__video">
+                            <video src="/video/RGB.mp4" muted autoplay loop playinline>></video>
+                        </div>
+                        <p>RGB</p>
+                        <button class="systems__button button">Подробней</button>
+                    </div>
+                    <div class="systems__block">
+                        <div class="systems__video">
+                            <video src="/video/mebel.mp4" muted autoplay loop playinline></video>
+                        </div>
+                        <p>Подсветка мебели</p>
+                        <button class="systems__button button">Подробней</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="advantage" class="advantage">
+            <div class="section-container">
+                <h2 class="advantage__title section-title">Преимущества продукции ETL</h2>
+                <div class="advantage__block1">
+                    <div class="advantage__img">
+                        <img src="/images/adv1.png" alt="">
+                        <div class="advantage__bg-decor"><span></span></div>
+                    </div>
+                    <div class="advantage__descr">
+                        <h3>Настройка с любого устройства</h3>
+                        <p>Настраивайте подсветку под себя с помощью любого смартфона и девайса — просто подключитесь к
+                            контроллеру по Wi-Fi и
+                            настройте систему так, как нужно именно Вам!</p>
+                    </div>
+                </div>
+                <div class="advantage__block2">
+                    <div class="advantage__img">
+                        <img src="/images/adv2.jpeg" alt="">
+                    </div>
+                    <div class="advantage__descr">
+                        <h3>Монтаж за 15 минут</h3>
+                        <p>Подсветка ETL - это конструктор, который легко монтируется даже на готовую лестницу. Вам не
+                            нужны особые знания или
+                            инструменты для монтажа - все уже есть в комплекте: от инструкции, до отверток. Легко,
+                            безопасно и эстетично.</p>
+                    </div>
+                </div>
+                <div class="advantage__block3">
+                    <div class="advantage__img">
+                        <img src="/images/adv3.jpeg" alt="">
+                    </div>
+                    <div class="advantage__descr">
+                        <h3>Отечественное производство</h3>
+                        <p>Все комплектующие производятся в цеху, в городе Краснодар и поступают к покупателю напрямую
+                            от изготовителя.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="controller" class="controller">
+            <div class="section-container">
+                <h2 class="controller__title section-title">Подробнее о контроллере ETL</h2>
+                <div class="controller__block">
+                    <div class="controller__img"><img id="controller-image" src="/images/controller.png" alt=""></div>
+                    <div class="controller__bg-decor" id="controller-bg"><span></span></div>
+                    <div class="controller__desc">
+                        <p>Основой подсветки является контроллер, который предоставлен в двух моделях: VS-24ST-M для
+                            монохромной подсветки с выходом 12V и VS-24ST-RGB для RGB подсветки с выходом 5V.<br><br>
+                            Настройка контроллера производится через создаваемую им собственную сеть Wi-Fi<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="complect" class="complect">
+            <div class="section-container">
+                <h2 class="complect__title section-title">Комплектации</h2>
+                <div class="complect__types">
+                    <div class="complect__block">
+                        <div class="complect__image">
+                            <div class='image__text'>
+                                <p>
+                                    <b>В комплекте:</b>
+                                    - контроллер;
+                                    - 2 датчика движения;
+                                    - блок питания;
+                                    - светильники в профиле;
+                                    - необходимые провода;
+                                </p>
+                            </div>
+                            <img src="/images/full-complect.jpg" alt="">
+                        </div>
+                        <h3 class="complect__name">Полная</h3>
+                        <p class="complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                            excepturi consequuntur non
+                            alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                            optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                        <button class="complect__button button-solid">Рассчитать стоимость</button>
+                    </div>
+                    <div class="complect__block">
+                        <div class="complect__image">
+                            <div class='image__text'>
+                                <p>
+                                    <b>В комплекте:</b>
+                                    - контроллер;
+                                    - 2 датчика движения;
+                                    - блок питания;
+                                    - светодиодная лента;
+                                    - необходимые провода;
+                                </p>
+                            </div>
+                            <img src="/images/eco-complect.jpg" alt="">
+                        </div>
+                        <h3 class="complect__name">Эконом</h3>
+                        <p class="complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                            excepturi consequuntur non
+                            alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                            optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                        <button class="complect__button button-solid">Рассчитать стоимость
+                        </button>
+                    </div>
+                    <div class="complect__block">
+                        <div class="complect__image">
+                            <div class='image__text'>
+                                <p>
+                                    <b>В комплекте:</b>
+                                    - контроллер;
+                                    - 2 датчика движения;
+                                    - блок питания;
+                                </p>
+                            </div>
+                            <img src="/images/controller-complect.jpg" alt="">
+                        </div>
+                        <h3 class="complect__name">Контроллер</h3>
+                        <p class="complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                            excepturi consequuntur non
+                            alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                            optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                        <button class="complect__button button-solid">Рассчитать стоимость</button>
+                    </div>
+                </div>
+                <div class="complect__mobile mobile-complect">
+                    <div class="mobile-complect__block">
+                        <h3 class="mobile-complect__name">Полная<img src="/icons/icon_down.svg" alt=""></h3>
+                        <div class="mobile-complect__dropdown">
+                            <div class="mobile-complect__image">
+                                <img src="/images/full-complect.jpg" alt="">
+                            </div>
+                            <p class="mobile-complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim
+                                excepturi consequuntur non
+                                alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                                optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                            <button class="complect__button button-solid">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                    <div class="mobile-complect__block">
+                        <h3 class="mobile-complect__name">Эконом<img src="/icons/icon_down.svg" alt=""></h3>
+                        <div class="mobile-complect__dropdown">
+                            <div class="mobile-complect__image">
+                                <img src="/images/eco-complect.jpg" alt="">
+                            </div>
+                            <p class="mobile-complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim
+                                excepturi consequuntur non
+                                alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                                optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                            <button class="complect__button button-solid">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                    <div class="mobile-complect__block">
+                        <h3 class="mobile-complect__name">Контроллер<img src="/icons/icon_down.svg" alt=""></h3>
+                        <div class="mobile-complect__dropdown">
+                            <div class="mobile-complect__image">
+                                <img src="/images/controller-complect.jpg" alt="">
+                            </div>
+                            <p class="mobile-complect__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Enim
+                                excepturi consequuntur non
+                                alias distinctio dignissimos, beatae laudantium reiciendis omnis quidem natus delectus
+                                optio? Dolorem excepturi rerum nihil accusamus. Beatae, necessitatibus.</p>
+                            <button class="complect__button button-solid">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="section-container">
+                <h2 class="portfolio-title section-title">Фото-портфолио наших работ</h2>
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                        <li class="sim-slider-element"><img src="/images/001.jpg" alt="1"></li>
+                        <li class="sim-slider-element"><img src="/images/002.jpg" alt="2"></li>
+                        <li class="sim-slider-element"><img src="/images/003.jpg" alt="N"></li>
+                    </ul>
+                    <div class="arrows">
+                        <div class="sim-slider-arrow-left"></div>
+                        <div class="sim-slider-arrow-right"></div>
+                    </div>
+                    <div class="dots">
+                        <div class="sim-slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer__block1">
+                <div class="footer__logo"><a href="#"><img src="/icons/logo.svg" alt=""></a></div>
+                <p class="footer__copyright">ООО «ЕТЛ»<br>
+                    Все права защищены <br>
+                    Copyright © 2022</p>
+
+            </div>
+            <div class="footer__block2">
+                <div class="footer__documents">
+                    <a href="" target="_blank">Политика обработки персональных данных</a> <br>
+                    <a href="" target="_blank">Публичная оферта</a>
+                </div>
+
+                <p class="numbers">
+                    ИНН 2308280604 <br>
+                    КПП 230801001 <br>
+                    ОГРН 1212300042570
+                </p>
+
+            </div>
+            <div class="footer__block3">
+                <div class="footer__contacts">
+                    <a href="" type="numer">+7 988 888-75-99</a><br>
+                    <a href="">mail@etl-home.ru</a><br>
+                    <a href="">WhatsApp</a>
+                </div>
+                <p class="adress">
+                    Общество с ограниченной ответственностью «ETL», <br>
+                    Юр.адрес: 350047, Краснодарский край, г. <br>
+                    Краснодар, улица Красных Партизан, д. 28.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i]function() { (m[i].a = m[i].a[]).push(arguments) };
+            var z = null; m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(90058577, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/90058577" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script src="/js/app.js"></script>
+    <script src="/js/slider.js"></script>
+    <script>new Sim()</script>
+</body>
+
+</html>
