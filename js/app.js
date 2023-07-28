@@ -55,7 +55,7 @@ function swapImg() {
     }, 3000);
     setTimeout(() => {
         controllerImg.src = '/images/RGBcontroller.png';
-        controllerBg.style.backgroundImage = 'url("/images/rgb_bg.png")';
+        controllerBg.style.backgroundImage = 'url("images/rgb_bg.png")';
         controllerBg.style.filter = 'blur(90px)';
     }, 3400);
     setTimeout(() => {
@@ -65,7 +65,7 @@ function swapImg() {
         controllerImg.style.opacity = '0%';
     }, 6000);
     setTimeout(() => {
-        controllerImg.src = '/images/controller.png';
+        controllerImg.src = 'images/controller.png';
         controllerBg.style.backgroundImage = 'none';
         controllerBg.style.filter = 'blur(80px)';
     }, 6400);
