@@ -651,6 +651,7 @@ header {
 }
 
 .controller__block {
+    justify-content: center;
     display: flex;
     gap: 30px;
 }
@@ -676,6 +677,7 @@ header {
 }
 
 .controller__bg-decor {
+    left: calc(24vh + 24vw);
     top: 39%;
     position: absolute;
     width: 400px;
