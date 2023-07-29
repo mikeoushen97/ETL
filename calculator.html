@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css1/calc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <script charset="utf-8" src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <title>ETL</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header__logo logo"><a href=""><img src="/icons/logo.svg" alt=""></a></div>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#hero" class="navigation__link">Главная</a></li>
+                    <li class="navigation__item" id="drop-on">
+                        <a href="#systems" class="navigation__link dropdown">Наши продукты<img
+                                src="/icons/icon_down.svg" alt=""></a>
+                        <ul class="navigation__dropdown dropdown" id="dropdown-body">
+                            <li class="dropdown__item"><a href="">Монохромная подсветка</a></li>
+                            <li class="dropdown__item"><a href="">RGB подсветка</a></li>
+                            <li class="dropdown__item"><a href="">Подсветка мебели</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item"><a href="#advantage" class="navigation__link">Преимущества</a></li>
+                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Фото-портфолио</a></li>
+                    <li class="navigation__item"><a href="">Партнерам</a></li>
+                </ul>
+            </nav>
+            <button class="header-button button" id='to-form'>Оставить заявку</button>
+            <div class="header__hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile__menu" id="mobile-menu">
+            <nav class="mobile__navigation">
+                <ul class="mobile__list">
+                    <li class="mobile__item"><a href="#hero">Главная</a></li>
+                    <li class="mobile__item"><a href="#systems">Наши продукты</a></li>
+                    <li class="mobile__item"><a href="#advantage">Преимущества</a></li>
+                    <li class="mobile__item"><a href="#portfolio">Фото-портфолио</a></li>
+                    <li class="mobile__item"><a href="">Партнерам</a></li>
+                </ul>
+                <div class="mobile__social">
+                    <a href=""><img src="/icons/whatsapp_icon.svg" alt=""></a>
+                    <a href=""><img src="/icons/telegram_icon.svg" alt=""></a>
+                    <a href=""><img src="/icons/vk_icon.svg" alt=""></a>
+                    <a href=""><img src="/icons/ok_icon.svg" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+    <main>
+        <section id="calc">
+            <div class="section-container">
+                <div class="calc__buttons">
+                    <div class="calc__actions">
+                        <div class="complect__types">
+                            <input name="type1" type="radio" id="standart" class="calc__complect"></input>
+                            <label for="standart">Полный</label>
+                            <input name="type1" type="radio" id="econom" class="calc__complect"></input>
+                            <label for="econom">Эконом</label>
+                            <input name="type1" type="radio" id="controller" class="calc__complect"></input>
+                            <label for="controller">Контроллер</label>
+                        </div>
+                        <div class="calc_ladder-param">
+                            <input type="number" id="ladder-length" class="calc__ladder-length"
+                                placeholder="длина ступеней (мм)">
+                            <input type="number" id="ladder-amount" class="calc__ladder-amount"
+                                placeholder="количество ступеней">
+                        </div>
+                        <button id="result" class="calc__result-btn">Посчитать</button>
+                    </div>
+                </div>
+                <div class="calc__body">
+                    <ul class="cacl__positions">
+                        <li class="calc__title">
+                            <h2>Комплектация набора</h2>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img src="/images/calc1.jpg" alt=""></div>
+                            <p class="calc__name">Контроллер</p>
+                            <div class="input-container">
+                                <input id="control__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="control__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img src="/images/calc2.jpg" alt=""></div>
+                            <p class="calc__name">Блок питания</p>
+                            <div class="input-container">
+                                <input id="block__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="block__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img src="/images/calc3.jpg" alt=""></div>
+                            <p class="calc__name">Датчик движения</p>
+                            <div class="input-container">
+                                <input id="sensor__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="sensor__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img id="lighter-img" src="/images/calc4.jpg" alt=""></div>
+                            <p class="calc__name" id="lighter">Светильник</p>
+                            <div class="input-container lamp-inputs">
+                                <input id="lamp__length" type="number" class="calc__length" disabled>
+                                <label for="calc__length">см</label>
+                                <input id="lamp__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="lamp__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img src="/images/calc5.jpg" alt=""></div>
+                            <p class="calc__name" id="cabel">Кабель с клеммами 7.5м</p>
+                            <div class="input-container">
+                                <input id="cabel-clem__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="cabel-clem__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <div class="calc__img"><img src="/images/calc6.jpg" alt=""></div>
+                            <p class="calc__name">Кабель для датчиков движения 20м</p>
+                            <div class="input-container">
+                                <input id="cabel__val" type="number" class="calc__value" disabled>
+                                <label for="calc__value">шт</label>
+                            </div>
+                            <span id="cabel__price" class="calc__price">0</span>
+                        </li>
+                        <li class="calc__item">
+                            <p class="calc__name">Итоговая стоимость</p>
+                            <span type="number" id="calc__full" class="calc__price" disabled>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer__block1">
+                <div class="footer__logo"><a href="#"><img src="/icons/logo.svg" alt=""></a></div>
+                <p class="footer__copyright">ООО «ЕТЛ»<br>
+                    Все права защищены <br>
+                    Copyright © 2022</p>
+
+            </div>
+            <div class="footer__block2">
+                <div class="footer__documents">
+                    <a href="">Политика обработки персональных данных</a> <br>
+                    <a href="">Публичная оферта</a>
+                </div>
+
+                <p class="numbers">
+                    ИНН 2308280604 <br>
+                    КПП 230801001 <br>
+                    ОГРН 1212300042570
+                </p>
+
+            </div>
+            <div class="footer__block3">
+                <div class="footer__contacts">
+                    <a href="" type="numer">+7 988 888-75-99</a><br>
+                    <a href="">mail@etl-home.ru</a><br>
+                    <a href="">WhatsApp</a>
+                </div>
+                <p class="adress">
+                    Общество с ограниченной ответственностью «ETL», <br>
+                    Юр.адрес: 350047, Краснодарский край, г. <br>
+                    Краснодар, улица Красных Партизан, д. 28.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i]function() { (m[i].a = m[i].a[]).push(arguments) };
+            var z = null; m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(90058577, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/90058577" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script src="/js/calc.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
