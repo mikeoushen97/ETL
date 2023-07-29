@@ -51,14 +51,14 @@ div.sim-slider-arrow-right {
 div.sim-slider-arrow-left {
     left: 10px;
     top: 0;
-    background-image: url(/icons/left-arrow.svg);
+    background-image: url(icons/left-arrow.svg);
     background-size: 100%;
 }
 
 div.sim-slider-arrow-right {
     right: 10px;
     top: 0;
-    background-image: url(/icons/right-arrow.svg);
+    background-image: url(icons/right-arrow.svg);
     background-size: 100%;
 }
 
