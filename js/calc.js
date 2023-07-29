@@ -32,7 +32,7 @@ function complectType() {
         sensVal.value = 2;
         lampLength.value = (ladderLength.value / 10);
         lampVal.value = ladderAmount.value;
-        lampImg.src = '/images/calc4.jpg';
+        lampImg.src = 'images/calc4.jpg';
         cabelClemVal.value = ladderAmount.value;;
         cabelVal.value = 1;
         lampName.innerHTML = 'Светильник';
@@ -73,7 +73,7 @@ function complectType() {
         blockVal.value = 1;
         sensVal.value = 2;
         lampName.innerHTML = 'Светодиодная лента';
-        lampImg.src = '/images/calc-alter1.jpg';
+        lampImg.src = 'images/calc-alter1.jpg';
         lampLength.value = (ladderLength.value / 10);
         lampVal.value = ladderAmount.value;
         cabelName.innerHTML = 'Кабель с клеммами 0.2м';
